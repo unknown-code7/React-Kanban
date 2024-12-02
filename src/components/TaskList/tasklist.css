@@ -1,0 +1,94 @@
+.tasklist {
+  /* Define um espaçamento interno para a lista de tarefas */
+  padding: 8px;
+
+  /* Define a cor de fundo da lista */
+  background-color: #5797b9;
+
+  /* Adiciona bordas arredondadas para suavizar os cantos */
+  border-radius: 2px;
+}
+
+.tasklist .title {
+  /* Define o espaçamento interno do título da lista */
+  padding: 4px;
+
+  /* Aplica uma fonte em negrito ao título */
+  font-weight: bold;
+
+  /* Define a cor de fundo com uma transparência leve */
+  background-color: rgba(0, 0, 0, 0.1);
+
+  /* Centraliza o texto do título */
+  text-align: center;
+}
+
+.tasklist .content {
+  /* Define espaçamento interno para o conteúdo da lista */
+  padding: 16px 4px;
+
+  /* Configura o layout para organizar os itens verticalmente */
+  display: flex;
+  flex-direction: column;
+}
+
+.tasklist .content .empty-list {
+  /* Centraliza o texto quando a lista está vazia */
+  text-align: center;
+
+  /* Adiciona uma borda tracejada ao redor do texto */
+  border: 1px dashed white;
+
+  /* Arredonda os cantos do contêiner */
+  border-radius: 4px;
+
+  /* Adiciona espaçamento interno ao contêiner */
+  padding: 4px;
+}
+
+.tasklist .btn {
+  /* Adiciona um espaçamento superior para separar o botão do restante */
+  margin-top: 8px;
+
+  /* Define espaçamento interno para o botão */
+  padding: 8px;
+
+  /* Configura o layout flex para centralizar o conteúdo do botão */
+  display: flex;
+  justify-content: center;
+
+  /* Remove a cor de fundo padrão */
+  background: none;
+
+  /* Remove as bordas padrão */
+  border: none;
+
+  /* Adiciona bordas arredondadas ao botão */
+  border-radius: 3px;
+
+  /* Define a cor do texto do botão */
+  color: white;
+
+  /* Define a cor de fundo principal do botão */
+  background: #00b8d4;
+
+  /* Adiciona uma transição suave na mudança de cor ao passar o mouse */
+  transition: background-color 0.3s;
+}
+
+.tasklist .btn:hover {
+  /* Altera a cor de fundo ao passar o mouse */
+  background-color: #0091a8;
+
+  /* Altera o cursor para indicar interatividade */
+  cursor: pointer;
+}
+
+.tasklist .btn img {
+  /* Define o tamanho do ícone dentro do botão */
+  width: 15px;
+  height: 15px;
+
+  /* Adiciona um espaço entre o ícone e o texto */
+  margin-right: 4px;
+}

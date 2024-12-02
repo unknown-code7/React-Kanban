@@ -1,0 +1,49 @@
+.task-item {
+  /* Define o fundo branco para cada item de tarefa */
+  background-color: #fff;
+
+  /* Adiciona bordas arredondadas ao item */
+  border-radius: 3px;
+
+  /* Aplica uma sombra sutil ao item para dar profundidade */
+  box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+
+  /* Altera o cursor para "pointer" quando o usuário passa o mouse */
+  cursor: pointer;
+
+  /* Define um espaçamento inferior entre os itens */
+  margin-bottom: 8px;
+
+  /* Faz o item ocupar toda a largura disponível do container pai */
+  width: 100%;
+
+  /* Adiciona espaçamento interno ao item */
+  padding: 8px 4px;
+
+  /* Define a cor do texto */
+  color: #222;
+
+  /* Define o tamanho da fonte do texto */
+  font-size: 14px;
+}
+
+.task-item input[type="text"] {
+  /* Remove a borda padrão dos campos de texto */
+  border: none;
+
+  /* Define o tamanho da fonte nos campos de texto */
+  font-size: 14px;
+
+  /* Faz o campo de texto ocupar toda a largura disponível */
+  display: block;
+  width: 100%;
+}
+
+.task-item select {
+  /* Faz o seletor ocupar toda a largura disponível */
+  display: block;
+  width: 100%;
+
+  /* Adiciona um espaçamento superior entre o seletor e outros elementos */
+  margin-top: 8px;
+}

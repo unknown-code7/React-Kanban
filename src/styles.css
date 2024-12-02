@@ -1,0 +1,103 @@
+/* Define o modelo de box-sizing para o elemento raiz */
+html {
+  /* Configura o box-sizing como border-box, fazendo com que largura e altura incluam bordas e padding */
+  box-sizing: border-box;
+
+  /* Define o tamanho base da fonte (16px é o padrão recomendado) */
+  font-size: 16px;
+}
+
+/* Garante que html e body ocupem toda a altura da janela */
+html,
+body {
+  /* Define a altura total para ocupar toda a janela */
+  height: 100%;
+
+  /* Define uma altura mínima para evitar layouts quebrados em telas menores */
+  min-height: 100vh;
+}
+
+/* Aplica o box-sizing configurado no elemento raiz a todos os elementos e pseudoelementos */
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* Herda o valor de box-sizing do elemento pai */
+}
+
+/* Remove margens e paddings padrão de vários elementos */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  /* Remove margens padrão */
+  margin: 0;
+
+  /* Remove padding padrão */
+  padding: 0;
+
+  /* Normaliza o peso da fonte */
+  font-weight: normal;
+}
+
+/* Remove os estilos padrão de listas ordenadas e não ordenadas */
+ol,
+ul {
+  list-style: none; /* Remove os marcadores de lista padrão */
+}
+
+/* Garante que as imagens sejam responsivas */
+img {
+  /* Faz com que a largura máxima da imagem seja o contêiner pai */
+  max-width: 100%;
+
+  /* Ajusta automaticamente a altura para manter a proporção */
+  height: auto;
+}
+
+/* Estilos para o contêiner principal da aplicação */
+.App {
+  /* Define a fonte padrão para toda a aplicação */
+  font-family: sans-serif;
+
+  /* Define a cor de fundo principal */
+  background-color: #0079bf;
+
+  /* Define a altura total para ocupar a tela inteira */
+  height: 100%;
+
+  /* Garante uma altura mínima de 100% da visualização */
+  min-height: 100vh;
+
+  /* Define a cor padrão do texto */
+  color: white;
+}
+
+/* Estilos para o contêiner interno da aplicação */
+.App .container {
+  /* Define a largura total do contêiner */
+  width: 100%;
+
+  /* Define uma largura máxima para centralizar o layout */
+  max-width: 800px;
+
+  /* Centraliza o contêiner horizontalmente */
+  margin: auto;
+
+  /* Adiciona um espaçamento interno */
+  padding: 8px;
+
+  /* Usa grid layout para organizar o conteúdo */
+  display: grid;
+
+  /* Define três colunas de tamanhos iguais */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* Adiciona espaçamento entre os itens do grid */
+  grid-gap: 8px;
+}
